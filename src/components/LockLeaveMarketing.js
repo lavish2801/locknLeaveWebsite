@@ -57,10 +57,10 @@ export default function LockLeaveMarketing() {
               <a href="mailto:lockandleave24@gmail.com" className="d-block text-dark px-3 py-2">
                 <img src={emailIcon} alt="Email" style={{ width: "24px", marginRight: "8px" }} />
               </a>
-              <a href="tel:+1234567890" className="d-block text-dark px-3 py-2">
+              <a href="+91-7982718223" className="d-block text-dark px-3 py-2">
                 <img src={callIcon} alt="Call" style={{ width: "24px", marginRight: "8px" }} />
               </a>
-              <a href="https://wa.me/message/ZWCKHBPEKKTLG1e" className="d-block text-dark px-3 py-2">
+              <a href=" https://wa.me/917982718223 " className="d-block text-dark px-3 py-2">
                 <img src={whatsappIcon} alt="WhatsApp" style={{ width: "24px", marginRight: "8px" }} />
               </a>
             </div>
@@ -119,9 +119,9 @@ export default function LockLeaveMarketing() {
       </div>
       {/* Footer Section */}
       <footer className="bg-white text-dark text-center py-4 mt-5 animate__animated animate__fadeInUp" style={{ opacity: 0.95 }}>
-        <p className="fw-bold mb-1">Contact Us |
+        <p className="fw-bold mb-1">Contact Us At:
           <a href="mailto:lockandleave24@gmail.com" className="text-dark mx-2">Email</a> |
-          <a href="https://wa.me/message/ZWCKHBPEKKTLG1e" className="text-dark mx-2">WhatsApp</a> |
+          <a href=" https://wa.me/917982718223 " className="text-dark mx-2">WhatsApp</a> |
           <a href="https://instagram.com/lock_nd_leave" className="text-dark mx-2">Instagram</a>
         </p>
         <p>&copy; 2025 Lock & Leave. All Rights Reserved.</p>
