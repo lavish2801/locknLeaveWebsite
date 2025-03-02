@@ -1,0 +1,8 @@
+.header-centered {
+    justify-content: center;
+    transition: justify-content 0.5s ease;
+  }
+  
+  .header-scrolled .header-centered {
+    justify-content: flex-start;
+  }
