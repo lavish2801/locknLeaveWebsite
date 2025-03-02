@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .header-centered {
-    justify-content: center;
-    transition: justify-content 0.5s ease;
-  }
-  
-  .header-scrolled .header-centered {
-    justify-content: flex-start;
-  }
+  justify-content: center;
+  transition: justify-content 0.5s ease;
+}
+
+.header-scrolled .header-centered {
+  justify-content: flex-start;
+}
+
+.header-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}

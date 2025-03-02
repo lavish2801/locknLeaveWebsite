@@ -48,7 +48,7 @@ export default function LockLeaveMarketing() {
             onError={(e) => (e.target.src = "https://via.placeholder.com/150?text=Lock+%26+Leave")}
             style={{ width: "50px", marginRight: "10px" }}
           />
-          <h1 className="display-6 fw-bold text-dark mb-0">Lock & Leave</h1>
+          <h1 className="display-6 fw-bold text-dark mb-0 header-title">Lock & Leave</h1>
         </div>
         <div className="position-relative contact-dropdown" ref={dropdownRef}>
           <button className="btn btn-outline-dark" onClick={() => setShowDropdown(!showDropdown)}>Contact Us</button>
@@ -57,10 +57,10 @@ export default function LockLeaveMarketing() {
               <a href="mailto:lockandleave24@gmail.com" className="d-block text-dark px-3 py-2">
                 <img src={emailIcon} alt="Email" style={{ width: "24px", marginRight: "8px" }} />
               </a>
-              <a href="+91-7982718223" className="d-block text-dark px-3 py-2">
+              <a href="tel:+917982718223" className="d-block text-dark px-3 py-2">
                 <img src={callIcon} alt="Call" style={{ width: "24px", marginRight: "8px" }} />
               </a>
-              <a href=" https://wa.me/917982718223 " className="d-block text-dark px-3 py-2">
+              <a href="https://wa.me/917982718223" className="d-block text-dark px-3 py-2">
                 <img src={whatsappIcon} alt="WhatsApp" style={{ width: "24px", marginRight: "8px" }} />
               </a>
             </div>
@@ -69,16 +69,16 @@ export default function LockLeaveMarketing() {
       </header>
 
       {/* Main Content */}
-      <div className="container text-center" style={{ marginTop: "0px" }}>
+      <div className="container text-center" style={{ marginTop: "120px" }}>
         {/* Hero Section */}
-        <div className="py-5 bg-white rounded shadow-sm animate__animated animate__fadeInUp text-dark border border-secondary" style={{ opacity: 0.95, background: `url(${luggageGif}) center/cover no-repeat`, width: "100%", maxWidth: "1300px", marginTop: "80px", height: "300px" }}>
+        <div className="py-5 bg-white rounded shadow-sm animate__animated animate__fadeInUp text-dark border border-secondary" style={{ opacity: 0.95, background: `url(${luggageGif}) center/cover no-repeat`, width: "100%", maxWidth: "1300px", marginTop: "10px", height: "300px" }}>
           <h2 className="fw-bold text-primary">Your Trusted Luggage Storage Solution</h2>
           <p className="lead">Explore cities freely while we keep your luggage safe! 🚀</p>
         </div>
 
         {/* Features Section */}
         <div className="mt-5">
-          <h2 className="fw-bold text-dark"  style={{color: "#fcfeff"}}>Why Choose Lock & Leave?</h2>
+          <h2 className="fw-bold" style={{ color: "#ffeb3b" }}>Why Choose Lock & Leave?</h2>
           <div className="row mt-4 g-4">
             {["Secure Storage", "Affordable", "Convenient Locations", "24/7 Support"].map((feature, index) => (
               <div key={index} className="col-12 col-md-6 col-lg-3 d-flex align-items-stretch animate__animated animate__fadeInUp animate__delay-1s">
@@ -119,9 +119,9 @@ export default function LockLeaveMarketing() {
       </div>
       {/* Footer Section */}
       <footer className="bg-white text-dark text-center py-4 mt-5 animate__animated animate__fadeInUp" style={{ opacity: 0.95 }}>
-        <p className="fw-bold mb-1">Contact Us At:
+        <p className="fw-bold mb-1">Contact Us :
           <a href="mailto:lockandleave24@gmail.com" className="text-dark mx-2">Email</a> |
-          <a href=" https://wa.me/917982718223 " className="text-dark mx-2">WhatsApp</a> |
+          <a href="https://wa.me/917982718223" className="text-dark mx-2">WhatsApp</a> |
           <a href="https://instagram.com/lock_nd_leave" className="text-dark mx-2">Instagram</a>
         </p>
         <p>&copy; 2025 Lock & Leave. All Rights Reserved.</p>
