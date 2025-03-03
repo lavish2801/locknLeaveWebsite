@@ -11,5 +11,16 @@
 
 .header-title {
   font-family: 'Roboto', sans-serif;
-  font-style: italic;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  align-items: middle;
+  min-height: 100vh;
+  /* margin-top: 0; Remove the margin-top to center vertically */
+}
+
+body:not(.loaded) .animate__animated {
+  animation: none !important;
 }

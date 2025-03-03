@@ -37,8 +37,17 @@ export default function LockLeaveMarketing() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Scroll to top on component mount and add class to body
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.classList.add("loaded");
+    return () => {
+      document.body.classList.remove("loaded");
+    };
+  }, []);
+
   return (
-    <div className="min-vh-100" style={{ background: "linear-gradient(to right, rgb(142, 81, 168), rgb(37, 37, 37))", color: "#212529" }}>
+    <div className="min-vh-100" style={{ background: "linear-gradient(to right, rgb(81, 104, 168), rgb(37, 37, 37))", color: "#212529" }}>
       {/* Fixed Header Section with Logo */}
       <header className={`d-flex align-items-center justify-content-between bg-white shadow fixed-top py-3 px-4 animate__animated animate__fadeInDown border-bottom border-secondary ${scrolled ? "header-scrolled" : "header-initial"}`}>
         <div className={`d-flex align-items-center transition-header ${centered ? "header-centered" : "header-left"}`}>
@@ -69,11 +78,12 @@ export default function LockLeaveMarketing() {
       </header>
 
       {/* Main Content */}
-      <div className="container text-center" style={{ marginTop: "120px" }}>
+      <div className="container text-center" style={{ marginTop: "75px" }}>
         {/* Hero Section */}
-        <div className="py-5 bg-white rounded shadow-sm animate__animated animate__fadeInUp text-dark border border-secondary" style={{ opacity: 0.95, background: `url(${luggageGif}) center/cover no-repeat`, width: "100%", maxWidth: "1300px", marginTop: "10px", height: "300px" }}>
-          <h2 className="fw-bold text-primary">Your Trusted Luggage Storage Solution</h2>
-          <p className="lead">Explore cities freely while we keep your luggage safe! 🚀</p>
+        {/* Features Section */}
+        <div className="py-5 bg-white rounded shadow-sm animate__animated animate__fadeInUp text-dark border border-secondary" style={{ opacity: 0.95, background: `url(${luggageGif}) repeat-x center center`, width: "100%", backgroundSize: "auto 150%", maxWidth: "1300px", marginTop: "10px", height: "250px", textAlign: "center", verticalAlign: "middle" }}>
+          <h2 className="fw-bold text-primary" style={{fontFamily: "Libre Franklin", textAlign: "center", verticalAlign: "middle" }}>Your Trusted Luggage Storage Solution</h2>
+          <p className="lead" style={{fontFamily: "Libre Franklin", textAlign: "center", verticalAlign: "middle"}}>Explore cities freely while we keep your luggage safe! 🚀</p>
         </div>
 
         {/* Features Section */}
@@ -107,7 +117,7 @@ export default function LockLeaveMarketing() {
         {/* Host & Customer Buttons */}
         <div className="mt-5">
           <a
-            href="https://forms.gle/exampleHostForm"
+            href="https://forms.gle/jR8rcm1oqhjwrg7x9"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-lg btn-success me-3 shadow animate__animated animate__heartBeat animate__delay-2s"
